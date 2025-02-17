@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentine's Maze</title>
+    <link rel="stylesheet" href="maze-style.css">
+</head>
+<body>
+    <div id="start-menu">
+        <h1>Choose Red</h1>
+        <button id="start-button">Start Game</button>
+    </div>
+    <div id="game-container" class="hidden">
+        <div id="maze">
+            <!-- End zones and player will be added here -->
+            <div class="end-zone success"></div>
+            <div class="end-zone failure"></div>
+            <div class="player"></div>
+        </div>
+        <div id="instructions">Which one will you choose</div>
+    </div>
+    <div id="game-over" class="hidden">
+        <h1>Game Over!</h1>
+        <button id="restart-button">Try Again</button>
+    </div>
+    <script src="maze-script.js"></script>
+</body>
+</html>

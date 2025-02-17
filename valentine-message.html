@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Said Yes! 💖</title>
+    <style>
+        body {
+            background: #ffe4e9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #ff6b8b;
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        #typed-text {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            border-right: 2px solid #ff6b8b; /* Simulate a typing cursor */
+            padding-right: 5px;
+            white-space: pre-line; /* Preserve line breaks */
+            overflow: hidden;
+        }
+
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            background: #ff6b8b;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background: #ff4c6b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yay! 💖</h1>
+    <p id="typed-text"></p>
+    <button onclick="window.location.href='https://drive.google.com/file/d/1C9mSr0Rqeo4nHS1XPVPMV9wKHnSw9Znc/view?usp=drivesdk'">dont scream if you click on this button pls</button>
+
+    <script>
+        const message = "Our date will be on February 14, Valentine's Day.\nTime: 10 AM.\nDress Code: Dress up cuteee, it is your day!";
+        const typedTextElement = document.getElementById('typed-text');
+        let index = 0;
+
+        function typeEffect() {
+            if (index < message.length) {
+                typedTextElement.innerHTML += message.charAt(index);
+                index++;
+                setTimeout(typeEffect, 50); // Typing speed (adjust if needed)
+            }
+        }
+
+        // Start typing effect
+        window.onload = typeEffect;
+    </script>
+</body>
+</html>
