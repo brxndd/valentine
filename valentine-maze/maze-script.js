@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
               playerRect.bottom < failureRect.top ||
               playerRect.top > failureRect.bottom)) {
             // Failure condition met
-            window.location.href = './images/failure.gif';
+            window.location.href = './failure.html';
             isGameOver = true;
         }
     }

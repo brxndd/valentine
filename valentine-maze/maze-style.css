@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #2c3e50;
+    background: #676767;
     font-family: 'Arial', sans-serif;
 }
 
@@ -16,11 +16,15 @@ body {
 #start-button, #restart-button {
     font-size: 1.5em;
     padding: 10px 20px;
-    background: #3498db;
+    background: #3E3E3E;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#start-button:hover {
+    background: #303030;
 }
 
 #game-container {
