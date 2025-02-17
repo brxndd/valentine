@@ -64,13 +64,12 @@ body {
 
 .player {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #3498db;
+    width: 10px;
+    height: 10px;
+    background: #000000;
     border-radius: 50%;
     pointer-events: none;
     transition: all 0.05s;
-    box-shadow: 0 0 10px #3498db;
 }
 
 #instructions {
